@@ -1,0 +1,27 @@
+2025/04/27-07:33:41.422 2904 Reusing MANIFEST C:\Users\theodorio\bot\tokens\my-session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/04/27-07:33:41.424 2904 Recovering log #398
+2025/04/27-07:33:41.434 2904 Reusing old log C:\Users\theodorio\bot\tokens\my-session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000398.log 
+2025/04/27-07:33:50.739 2948 Level-0 table #410: started
+2025/04/27-07:33:50.751 2948 Level-0 table #410: 105541 bytes OK
+2025/04/27-07:33:50.754 2948 Delete type=0 #398
+2025/04/27-07:33:50.755 2904 Manual compaction at level-0 from '\x00\x1e\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x1f\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/04/27-07:33:55.537 290c Compacting 1@1 + 8@2 files
+2025/04/27-07:33:55.790 290c Generated table #411@1: 85800 keys, 2243514 bytes
+2025/04/27-07:33:56.086 290c Generated table #412@1: 24798 keys, 2240264 bytes
+2025/04/27-07:33:56.242 290c Generated table #413@1: 34285 keys, 2189929 bytes
+2025/04/27-07:33:56.378 290c Generated table #414@1: 16739 keys, 2195218 bytes
+2025/04/27-07:33:56.608 290c Generated table #415@1: 47149 keys, 2232991 bytes
+2025/04/27-07:33:56.877 290c Generated table #416@1: 37557 keys, 2228839 bytes
+2025/04/27-07:33:57.052 290c Generated table #417@1: 36219 keys, 2178076 bytes
+2025/04/27-07:33:57.110 290c Generated table #418@1: 27947 keys, 625657 bytes
+2025/04/27-07:33:57.110 290c Compacted 1@1 + 8@2 files => 16134488 bytes
+2025/04/27-07:33:57.113 290c compacted to: files[ 0 0 8 0 0 0 0 ]
+2025/04/27-07:33:57.113 290c Delete type=2 #400
+2025/04/27-07:33:57.114 290c Delete type=2 #401
+2025/04/27-07:33:57.114 290c Delete type=2 #402
+2025/04/27-07:33:57.114 290c Delete type=2 #403
+2025/04/27-07:33:57.114 290c Delete type=2 #404
+2025/04/27-07:33:57.114 290c Delete type=2 #405
+2025/04/27-07:33:57.114 290c Delete type=2 #406
+2025/04/27-07:33:57.114 290c Delete type=2 #407
+2025/04/27-07:33:57.115 290c Delete type=2 #410
