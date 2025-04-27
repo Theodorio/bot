@@ -1,7 +1,22 @@
+const express = require('express');
 const venom = require('venom-bot');
 
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+// Define a route for the root URL
+app.get('/', (req, res) => {
+    res.send('Bot is running!');
+});
+
+// Start the server and listen on the specified port
+app.listen(PORT, () => {
+    console.log(`Server listening on port ${PORT}`);
+});
+
+// Venom bot setup
 venom.create({
-    session: 'my=session',
+    session: 'my-session',
     multidevice: true,
     headless: true,
     chromeFlags: [
@@ -17,6 +32,7 @@ venom.create({
     console.error('Error creating venom client:', error);
 });
 
+// Start the WhatsApp bot
 function start(client) {
     client.onMessage(async (message) => {
         console.log('Received message:', message); // Log the incoming message
@@ -28,7 +44,7 @@ function start(client) {
             await client.sendText(message.from, 'Hello! How can I help you?');
             await showMenu(client, message.from);
         } else if (msgBody === '1' && !message.isGroupMsg) {
-            await trackUserTweets(client, message.from);
+            await trackUser Tweets(client, message.from);
         } else if (msgBody === '2' && !message.isGroupMsg) {
             await checkDailyTasks(client, message.from);
         } else if (msgBody === 'menu' && !message.isGroupMsg) {
@@ -39,6 +55,7 @@ function start(client) {
     });
 }
 
+// Show menu options to the user
 async function showMenu(client, from) {
     const menuMessage = `
 Please choose an option:
@@ -49,14 +66,12 @@ Type the number of your choice or type 'menu' to see this again.
     await client.sendText(from, menuMessage);
 }
 
-async function trackUserTweets(client, from) {
-    // Here you can implement the logic to track user tweets
-    // For now, we'll just send a placeholder message
+// Function to track user tweets (placeholder)
+async function trackUser Tweets(client, from) {
     await client.sendText(from, 'Tracking user tweets is currently not implemented. Please provide a Twitter username to track.');
 }
 
+// Function to check daily tasks (placeholder)
 async function checkDailyTasks(client, from) {
-    // Here you can implement the logic to check daily tasks
-    // For now, we'll just send a placeholder message
     await client.sendText(from, 'Checking daily tasks is currently not implemented. Please check your task list.');
 }
